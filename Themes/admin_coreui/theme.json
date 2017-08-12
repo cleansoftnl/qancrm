@@ -1,0 +1,8 @@
+{
+    "name": "admin_coreui",
+    "author": "Start coreui",
+    "description": "Coreui Admin Bootstrap Theme for Phoenix CMS",
+    "site": "http://cysha.co.uk",
+    "type": "backend",
+    "version": "1.0"
+}
