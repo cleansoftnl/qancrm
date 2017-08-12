@@ -1,0 +1,155 @@
+{
+  "name": "laravel/laravel",
+  "description": "The Laravel Framework.",
+  "keywords": [],
+  "license": "MIT",
+  "type": "project",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/cysha/installers"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/cleansoftmods/theme-default.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/cleansoftmods/theme-default-admin.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/cleansoftmods/theme-adminlte.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/cleansoftmods/theme-admin-charisma.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/cleansoftmods/theme-admin-coreui.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/CleanSoftMods/theme-admin-startbootstrap.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/cleansoftmods/theme-charisma.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/cleansoftmods/theme-coreui.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/cleansoftmods/theme-startbootstrap.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/cleansoftmods/module-core.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/cleansoftmods/module-auth.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/cleansoftmods/module-admin.git"
+    },
+
+
+
+    {
+    "type": "composer",
+    "url": "https://packages.phoenixcms.org/"
+    },
+    {
+    "type": "composer",
+    "url": "https://packages.cybershade.org/"
+    },
+    {
+    "type": "vcs",
+    "url": "https://github.com/cysha/installers"
+    }
+
+
+
+
+
+  ],
+  "config": {
+    "preferred-install": "dev"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "laravel/framework": "5.3.*",
+    "composer/installers": "dev-master",
+    "barryvdh/laravel-ide-helper": "^2.4",
+    "doctrine/dbal": "^2.5",
+    "wikimedia/composer-merge-plugin": "^1.4",
+    "nwidart/laravel-modules": "^1.14",
+    "filp/whoops": "^2.1",
+    "yajra/laravel-datatables-oracle": "^6.0",
+    "guzzlehttp/guzzle": "^6.2",
+    "pragmarx/google2fa": "^0.7.1",
+    "laravelcollective/html": "^5.3",
+    "teepluss/theme": "^2.0",
+    "anahkiasen/former": "^4.0",
+    "mews/purifier": "^2.0",
+    "vespakoen/menu": "dev-master",
+    "greggilbert/recaptcha": "dev-master",
+    "dingo/api": "1.0.x@dev",
+    "cysha/theme-default": "dev-master",
+    "cysha/theme-default-admin": "dev-master",
+    "cysha/theme-admin-charisma": "dev-master",
+    "cysha/theme-admin-coreui": "dev-master",
+    "cysha/theme-admin-startbootstrap": "dev-master",
+    "cysha/theme-adminlte": "dev-master",
+    "cysha/theme-charisma": "dev-master",
+    "cysha/theme-coreui": "dev-master",
+    "cysha/theme-startbootstrap": "dev-master",
+    "cysha/module-core": "dev-master",
+    "cysha/module-auth": "dev-master",
+    "cysha/module-admin": "dev-master"
+  },
+  "require-dev": {
+    "fzaninotto/faker": "~1.4",
+    "orchestra/testbench": "~3.1",
+    "mockery/mockery": "0.9.*",
+    "phpunit/phpunit": "~4.0",
+    "phpspec/phpspec": "~2.1",
+    "symfony/dom-crawler": "~3.1",
+    "symfony/css-selector": "~3.1"
+  },
+  "autoload": {
+    "classmap": [
+      "database"
+    ],
+    "psr-4": {
+      "Cms\\": "app/",
+      "Cms\\Modules\\": "Modules"
+    },
+    "files": [
+      "app/Helpers/Debug.php"
+    ]
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests/TestCase.php"
+    ]
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "php artisan cms:update"
+    ],
+    "post-update-cmd": [
+      "php artisan cms:update"
+    ],
+    "post-create-project-cmd": [
+      "php -r \"copy('.env.example', '.env');\"",
+      "php artisan key:generate"
+    ]
+  }
+}
