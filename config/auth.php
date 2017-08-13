@@ -35,10 +35,25 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+
+        'staff' => [
+            'driver' => 'session',
+            'provider' => 'staff',
+        ],
+
+
         /*'api' => [
             'driver' => 'token',
             'provider' => 'users',
         ],*/
+
+
+        'staff_api' => [
+            'driver' => 'token',
+            'provider' => 'staff',
+        ],
+
+
     ],
     /*
     |--------------------------------------------------------------------------
@@ -61,6 +76,13 @@ return [
             'driver' => 'eloquent',
             'model' => Modules\Auth\Models\User::class,
         ],
+
+        'staff' => [
+            'driver' => 'eloquent',
+            'model' => Modules\Auth\Models\Staff::class,
+        ],
+
+
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'auth_users',
@@ -87,6 +109,13 @@ return [
     'passwords' => [
         'users' => [
             'provider' => 'users',
+            'email' => 'auth.emails.password',
+            'table' => 'auth_password_resets',
+            'expire' => 60,
+        ],
+
+        'staff' => [
+            'provider' => 'staff',
             'email' => 'auth.emails.password',
             'table' => 'auth_password_resets',
             'expire' => 60,

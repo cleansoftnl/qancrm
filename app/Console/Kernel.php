@@ -1,4 +1,4 @@
-<?php namespace Cms\Console;
+<?php namespace App\Console;
 
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Contracts\Foundation\Application;

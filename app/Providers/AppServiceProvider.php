@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Providers;
+namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Blade;
@@ -54,7 +54,7 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->app->bind(
             'Illuminate\Contracts\Auth\Registrar',
-            'Cms\Services\Registrar'
+            'App\Services\Registrar'
         );
     }
 }

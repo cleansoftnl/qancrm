@@ -1,7 +1,7 @@
 <?php
 namespace Modules\Auth\Http\Requests;
 
-use Cms\Http\Requests\Request;
+use App\Http\Requests\Request;
 use Auth;
 
 class FrontendAvatarRequest extends Request

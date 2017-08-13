@@ -128,7 +128,7 @@
       "database"
     ],
     "psr-4": {
-      "Cms\\": "app/",
+      "App\\": "app/",
       "Modules\\": "Modules"
     },
     "files": [

@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Exceptions;
+namespace App\Exceptions;
 
 use Modules\Pages\Http\Controllers\Frontend\PagesController;
 use Modules\Core\Exceptions\NotInstalledException;

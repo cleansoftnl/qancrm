@@ -1,4 +1,4 @@
-<?php namespace Cms\Http\Middleware;
+<?php namespace App\Http\Middleware;
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Auth;

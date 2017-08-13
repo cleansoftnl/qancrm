@@ -7,15 +7,15 @@ $router->group(['namespace' => 'Auth'], function ($router) {
     if (!app('modules')->has('Social') || !app('modules')->get('Social')->enabled()) {
         $router->get('login', ['as' => 'pxcms.user.login', 'uses' => 'AuthController@getLogin']);
     }
-    $router->get('logout', ['as' => 'pxcms.user.logout', 'uses' => 'AuthController@getLogout', 'middleware' => 'auth']);
+    $router->get('logout', ['as' => 'pxcms.user.logout', 'uses' => 'AuthController@getLogout', 'middleware' => 'auth:staff']);
     $router->group(['prefix' => 'login'], function (Router $router) {
         // 2fa
-        $router->group(['prefix' => '2fa', 'middleware' => 'auth'], function (Router $router) {
+        $router->group(['prefix' => '2fa', 'middleware' => 'auth:staff'], function (Router $router) {
             $router->post('/', ['uses' => 'AuthController@post2fa']);
             $router->get('/', ['as' => 'pxcms.user.2fa', 'uses' => 'AuthController@get2fa']);
         });
         // password expired
-        $router->group(['prefix' => 'password_expired', 'middleware' => 'auth'], function (Router $router) {
+        $router->group(['prefix' => 'password_expired', 'middleware' => 'auth:staff'], function (Router $router) {
             $router->post('/', ['uses' => 'AuthController@postPassExpired']);
             $router->get('/', ['as' => 'pxcms.user.pass_expired', 'uses' => 'AuthController@getPassExpired']);
         });
@@ -33,9 +33,9 @@ $router->group(['namespace' => 'Auth'], function ($router) {
 });
 // user control panel
 $router->group([
-    'prefix' => 'user',
+    'prefix' => 'staff',
     'namespace' => 'ControlPanel',
-    'middleware' => 'auth',
+    'middleware' => 'auth:staff',
 ], function (Router $router) {
     $router->get('permissions', ['as' => 'pxcms.user.permissions', 'uses' => 'PermissionsController@getForm']);
     $router->group(['prefix' => 'avatar'], function (Router $router) {
