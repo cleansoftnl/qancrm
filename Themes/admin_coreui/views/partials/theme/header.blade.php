@@ -7,7 +7,7 @@
       <span class="icon-bar"></span>
     </button>
     <a class="navbar-brand" href="{{ route('pxcms.admin.index') }}">
-      {{ config('app.name') }}
+      CoreUI QanCRM
     </a>
   </div>
 

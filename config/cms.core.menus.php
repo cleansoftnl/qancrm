@@ -26,7 +26,7 @@ return [
             'children' => [],
         ],
         [
-            'text' => 'Modules',
+            'text' => 'SystemCP',
             'type' => 'header',
             'order' => 100,
         ],

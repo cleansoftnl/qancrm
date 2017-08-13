@@ -19,7 +19,7 @@ class IsInstalledMiddleware
     public function handle($request, Closure $next)
     {
         if (!file_exists(base_path('.env'))) {
-            throw new \Cms\Modules\Core\Exceptions\NotInstalledException('PhoenixCMS has not been installed');
+            throw new \Cms\Modules\Core\Exceptions\NotInstalledException('QanCRM has not been installed');
         }
         return $next($request);
     }

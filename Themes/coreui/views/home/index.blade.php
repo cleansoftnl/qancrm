@@ -6,11 +6,10 @@
           <a href="#">Column Set 1</a>
         </div>
         <div class="right">
-          <a href="#" class="btn btn-success pull-right">Do Something</a>
+          <a href="#" class="btn btn-success pull-right">CoreUI</a>
         </div>
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex velit ea voluptatem. Velit, eius, quo ex ratione
-        ab esse ut alias sit earum corporis aperiam perspiciatis officia dolorem veritatis temporibus!</p>
+      <p>CoreUI</p>
     </section>
   </div>
   <div class="col-md-4">
@@ -20,11 +19,10 @@
           <a href="#">Column Set 1</a>
         </div>
         <div class="right">
-          <a href="#" class="btn btn-success pull-right">Do Something</a>
+          <a href="#" class="btn btn-success pull-right">CoreUI</a>
         </div>
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex velit ea voluptatem. Velit, eius, quo ex ratione
-        ab esse ut alias sit earum corporis aperiam perspiciatis officia dolorem veritatis temporibus!</p>
+      <p>CoreUI</p>
     </section>
   </div>
   <div class="col-md-4">
@@ -34,11 +32,10 @@
           <a href="#">Column Set 1</a>
         </div>
         <div class="right">
-          <a href="#" class="btn btn-success pull-right">Do Something</a>
+          <a href="#" class="btn btn-success pull-right">CoreUI</a>
         </div>
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex velit ea voluptatem. Velit, eius, quo ex ratione
-        ab esse ut alias sit earum corporis aperiam perspiciatis officia dolorem veritatis temporibus!</p>
+      <p>CoreUI</p>
     </section>
   </div>
 </div>

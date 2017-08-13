@@ -20,7 +20,7 @@ return [
                 ],
                 [
                     'route' => 'admin.modules.manager',
-                    'text' => 'Module Manager',
+                    'text' => 'SystemCP',
                     'icon' => 'fa-puzzle-piece',
                     'order' => 3,
                     'permission' => 'manage@admin_modules',

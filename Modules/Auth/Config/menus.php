@@ -152,12 +152,12 @@ return [
             'order' => 4,
             'permission' => null,
         ],
-        // [
-        //     'route' => 'pxcms.user.notification',
-        //     'text' => 'Notifications',
-        //     'icon' => 'fa-envelope-o',
-        //     'order' => 5,
-        //     'permission' => null,
-        // ],
+        [
+            'route' => 'pxcms.user.notification',
+            'text' => 'Notifications',
+            'icon' => 'fa-envelope-o',
+            'order' => 5,
+            'permission' => null,
+        ],
     ],
 ];

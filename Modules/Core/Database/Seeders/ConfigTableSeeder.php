@@ -18,7 +18,7 @@ class ConfigTableSeeder extends Seeder
                 'environment' => $environment,
                 'group' => 'app',
                 'item' => 'name',
-                'value' => 'PhoenixCMS',
+                'value' => 'QanCRM',
             ],
             [
                 'environment' => $environment,

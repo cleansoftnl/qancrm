@@ -13,7 +13,7 @@ class ModuleManager
              * Page Decoration Values
              */
             'page' => [
-                'title' => '<i class="fa fa-fw fa-puzzle-piece"></i> Module Manager',
+                'title' => '<i class="fa fa-fw fa-puzzle-piece"></i> Manage Modules',
                 'alert' => [
                     'class' => 'info',
                     'text' => '<i class="fa fa-info-circle"></i> The modules below are what you have installed.',
@@ -48,13 +48,13 @@ class ModuleManager
              * Lists the tables columns
              */
             'columns' => [
-                'Debug' => [
+                /*'Debug' => [
                     'th' => 'Debug',
                     'tr' => function ($model) {
                         return \Debug::dump($model);
                     },
                     'width' => '80%',
-                ],
+                ],*/
                 'order' => [
                     'th' => 'Load Order',
                     'tr' => function ($model) {
