@@ -1,8 +1,8 @@
 <?php
-namespace Cms\Modules\Core\Database\Seeders;
+namespace Modules\Core\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Cms\Modules\Core;
+use Modules\Core;
 
 class ConfigTableSeeder extends Seeder
 {

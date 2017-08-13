@@ -1,12 +1,12 @@
 <?php
-namespace Cms\Modules\Auth\Providers;
+namespace Modules\Auth\Providers;
 
-use Cms\Modules\Core\Providers\CmsRoutingProvider;
+use Modules\Core\Providers\CmsRoutingProvider;
 use Illuminate\Support\Facades\Route;
 
 class AuthRoutingProvider extends CmsRoutingProvider
 {
-    protected $namespace = 'Cms\Modules\Auth\Http\Controllers';
+    protected $namespace = 'Modules\Auth\Http\Controllers';
 
     /**
      * @return string
@@ -44,10 +44,10 @@ class AuthRoutingProvider extends CmsRoutingProvider
             return with(new $model())->findOrFail($id);
         });
         Route::bind('auth_role_id', function ($id) {
-            return with(new \Cms\Modules\Auth\Models\Role())->with('permissions')->findOrFail($id);
+            return with(new \Modules\Auth\Models\Role())->with('permissions')->findOrFail($id);
         });
         Route::bind('auth_apikey_id', function ($id) {
-            return with(new \Cms\Modules\Auth\Models\ApiKey())->findOrFail($id);
+            return with(new \Modules\Auth\Models\ApiKey())->findOrFail($id);
         });
     }
 }

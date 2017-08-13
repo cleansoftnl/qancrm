@@ -1,9 +1,9 @@
 <?php
-namespace Cms\Modules\Auth\Http\Controllers\Backend;
+namespace Modules\Auth\Http\Controllers\Backend;
 
-use Cms\Modules\Core\Http\Controllers\BaseBackendController;
-use Cms\Modules\Auth\Datatables\RoleManager;
-use Cms\Modules\Admin\Traits\DataTableTrait;
+use Modules\Core\Http\Controllers\BaseBackendController;
+use Modules\Auth\Datatables\RoleManager;
+use Modules\Admin\Traits\DataTableTrait;
 
 class RoleManagerController extends BaseBackendController
 {

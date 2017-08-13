@@ -1,7 +1,7 @@
 <?php
 return [
     'table-prefix' => 'auth_',
-    'user_model' => \Cms\Modules\Auth\Models\User::class,
+    'user_model' => \Modules\Auth\Models\User::class,
     'paths' => [
         'redirect_login' => 'pxcms.user.dashboard',
         'redirect_logout' => 'pxcms.pages.index',

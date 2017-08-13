@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Core\Console\Commands;
+namespace Modules\Core\Console\Commands;
 
 use Carbon\Carbon;
 use Schema;
@@ -8,8 +8,8 @@ use File;
 class CmsInstallCommand extends BaseCommand
 {
     protected $name = 'cms:install';
-    protected $readableName = 'Phoenix CMS Installer';
-    protected $description = 'Installs the CMS';
+    protected $readableName = 'Phoenix CRM Installer';
+    protected $description = 'Installs the CRM';
 
     public function fire()
     {

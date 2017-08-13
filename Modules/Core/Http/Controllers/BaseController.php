@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Core\Http\Controllers;
+namespace Modules\Core\Http\Controllers;
 
 use Nwidart\Modules\Routing\Controller;
 use Illuminate\Foundation\Http\Response;
@@ -104,7 +104,7 @@ class BaseController extends Controller
     }
 
     /**
-     * Gets the current modules name, presuming this is a CMS Module.
+     * Gets the current modules name, presuming this is a CRM Module.
      *
      * @param string $class
      *

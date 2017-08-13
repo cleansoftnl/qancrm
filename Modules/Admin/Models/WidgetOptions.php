@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Admin\Models;
+namespace Modules\Admin\Models;
 class WidgetOptions extends BaseModel
 {
     public $table = 'dashboard_widget_options';

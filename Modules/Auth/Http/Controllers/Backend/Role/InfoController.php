@@ -1,8 +1,8 @@
 <?php
-namespace Cms\Modules\Auth\Http\Controllers\Backend\Role;
+namespace Modules\Auth\Http\Controllers\Backend\Role;
 
-use Cms\Modules\Auth\Repositories\Role\RepositoryInterface as RoleRepo;
-use Cms\Modules\Auth\Models\Role;
+use Modules\Auth\Repositories\Role\RepositoryInterface as RoleRepo;
+use Modules\Auth\Models\Role;
 
 class InfoController extends BaseRoleController
 {

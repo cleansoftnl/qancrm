@@ -1,8 +1,8 @@
 <?php
-namespace Cms\Modules\Core\Providers;
+namespace Modules\Core\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Cms\Modules\Core;
+use Modules\Core;
 use Cache;
 use Config;
 use Schema;
@@ -22,15 +22,17 @@ class CmsConfigProvider extends ServiceProvider
             try {
                 DB::connection()->getDatabaseName();
             } catch (\PDOException $e) {
-                return;
+                return $e;
             }
             // make sure the config table is installed
-            if (!Schema::hasTable(with(new Core\Models\DBConfig())->table)) {
+            if (!Schema::hasTable(with(new \Modules\Core\Models\DBConfig())->table)) {
                 return;
             }
+
             // cache the config table
             $table = Cache::rememberForever('core.config_table', function () {
-                return Core\Models\DBConfig::orderBy('environment', 'asc')->get();
+                $allconfigitems = \Modules\Core\Models\DBConfig::orderBy('environment', 'asc')->get();
+                return $allconfigitems;
             });
         }
         if ($table->count() == 0) {

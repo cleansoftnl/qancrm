@@ -1,15 +1,15 @@
 <?php
-namespace Cms\Modules\Auth\Console\Commands;
+namespace Modules\Auth\Console\Commands;
 
 use Symfony\Component\Console\Input\InputArgument;
-use Cms\Modules\Core\Console\Commands\BaseCommand;
+use Modules\Core\Console\Commands\BaseCommand;
 use Carbon\Carbon;
 
 class MakeUserCommand extends BaseCommand
 {
     protected $name = 'make:user';
     protected $readableName = 'User Generator';
-    protected $description = 'Create a new CMS user';
+    protected $description = 'Create a new CRM user';
 
     public function fire()
     {

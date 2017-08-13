@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Core\Http\Middleware;
+namespace Modules\Core\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Request;
@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Request;
 class ForceSecureMiddleware
 {
     /**
-     * Force Secure on the CMS.
+     * Force Secure on the CRM.
      *
      * @param \Illuminate\Http\Request $request
      * @param \Closure $next

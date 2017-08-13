@@ -1,8 +1,8 @@
 <?php
-namespace Cms\Modules\Core\Http\Middleware;
+namespace Modules\Core\Http\Middleware;
 
 use Closure;
-use Cms\Modules\Core\Services\MenuService;
+use Modules\Core\Services\MenuService;
 
 class MenuMiddleware
 {

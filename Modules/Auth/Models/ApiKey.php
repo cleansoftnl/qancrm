@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Auth\Models;
+namespace Modules\Auth\Models;
 class ApiKey extends BaseModel
 {
     public $table = 'apikeys';

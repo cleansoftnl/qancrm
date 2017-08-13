@@ -1,7 +1,7 @@
 <?php
-namespace Cms\Modules\Admin\Http\Controllers\Backend\Config;
+namespace Modules\Admin\Http\Controllers\Backend\Config;
 
-use Cms\Modules\Admin\Http\Controllers\Backend\BaseAdminController;
+use Modules\Admin\Http\Controllers\Backend\BaseAdminController;
 use Input;
 
 class BaseConfigController extends BaseAdminController

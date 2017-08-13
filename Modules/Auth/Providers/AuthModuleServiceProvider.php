@@ -1,7 +1,7 @@
 <?php
-namespace Cms\Modules\Auth\Providers;
+namespace Modules\Auth\Providers;
 
-use Cms\Modules\Core\Providers\BaseModuleProvider;
+use Modules\Core\Providers\BaseModuleProvider;
 use Config;
 use Illuminate\Support\Facades\Auth;
 
@@ -37,8 +37,8 @@ class AuthModuleServiceProvider extends BaseModuleProvider
      * @var array
      */
     protected $bindings = [
-        'Cms\Modules\Auth\Repositories\User' => ['RepositoryInterface' => 'EloquentRepository'],
-        'Cms\Modules\Auth\Repositories\Role' => ['RepositoryInterface' => 'EloquentRepository'],
+        'Modules\Auth\Repositories\User' => ['RepositoryInterface' => 'EloquentRepository'],
+        'Modules\Auth\Repositories\Role' => ['RepositoryInterface' => 'EloquentRepository'],
     ];
 
     /**
@@ -48,11 +48,11 @@ class AuthModuleServiceProvider extends BaseModuleProvider
     {
         parent::register();
         // override some config settings
-        $userModel = 'Cms\Modules\Auth\Models\User';
+        $userModel = 'Modules\Auth\Models\User';
         config(['cms.auth.config.user_model' => $userModel]);
         config(['auth.table' => with(new $userModel())->getTable()]);
         // attach view composer to the login & register form
-        view()->composer('theme.*::views.partials.core._login_form', 'Cms\Modules\Auth\Composers\Recaptcha@loginForm');
-        view()->composer('theme.*::views.partials.core._register_form', 'Cms\Modules\Auth\Composers\Recaptcha@registerForm');
+        view()->composer('theme.*::views.partials.core._login_form', 'Modules\Auth\Composers\Recaptcha@loginForm');
+        view()->composer('theme.*::views.partials.core._register_form', 'Modules\Auth\Composers\Recaptcha@registerForm');
     }
 }

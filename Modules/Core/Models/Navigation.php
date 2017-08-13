@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Core\Models;
+namespace Modules\Core\Models;
 class Navigation extends BaseModel
 {
     public $table = 'core_navigation';

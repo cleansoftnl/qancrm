@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Core\Composers;
+namespace Modules\Core\Composers;
 class Sidebars
 {
     public function left($view)

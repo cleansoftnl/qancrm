@@ -1,7 +1,7 @@
 <?php
-namespace Cms\Modules\Auth\Models;
+namespace Modules\Auth\Models;
 
-use Cms\Modules\Core\Models\BaseModel as CBM;
+use Modules\Core\Models\BaseModel as CBM;
 
 class BaseModel extends CBM
 {

@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Auth\Http\Controllers\Frontend\ControlPanel;
+namespace Modules\Auth\Http\Controllers\Frontend\ControlPanel;
 class DashboardController extends BaseController
 {
     public function getIndex()

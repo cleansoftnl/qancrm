@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Auth\Datatables;
+namespace Modules\Auth\Datatables;
 
 use Lock;
 

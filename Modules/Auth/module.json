@@ -1,7 +1,7 @@
 {
     "name": "Auth",
     "alias": "auth",
-    "description": "Auth Module for Phoenix CMS v1",
+    "description": "Auth Module for Qan CRM v1",
     "authors": [
         { "name": "xLink (Dan Aldridge)", "email": "xLink@cybershade.org" }
     ],
@@ -12,11 +12,11 @@
     "active": 1,
     "order": 1,
     "providers": [
-        "Cms\\Modules\\Auth\\Providers\\CustomLockServiceProvider",
-        "Cms\\Modules\\Auth\\Providers\\AuthModuleServiceProvider",
-        "Cms\\Modules\\Auth\\Providers\\AuthEventsProvider",
-        "Cms\\Modules\\Auth\\Providers\\AuthRoutingProvider",
-        "Cms\\Modules\\Auth\\Providers\\AuthServicesProvider"
+        "Modules\\Auth\\Providers\\CustomLockServiceProvider",
+        "Modules\\Auth\\Providers\\AuthModuleServiceProvider",
+        "Modules\\Auth\\Providers\\AuthEventsProvider",
+        "Modules\\Auth\\Providers\\AuthRoutingProvider",
+        "Modules\\Auth\\Providers\\AuthServicesProvider"
     ],
     "aliases": {
         "Lock": "BeatSwitch\\Lock\\Integrations\\Laravel\\Facades\\Lock",

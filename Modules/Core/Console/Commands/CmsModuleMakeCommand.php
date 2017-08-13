@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Core\Console\Commands;
+namespace Modules\Core\Console\Commands;
 
 use Nwidart\Modules\Process\Installer;
 use Symfony\Component\Finder\Finder;
@@ -7,7 +7,7 @@ use Symfony\Component\Finder\Finder;
 class CmsModuleMakeCommand extends BaseCommand
 {
     protected $name = 'cms:module:make';
-    protected $readableName = 'Phoenix CMS - Module Make';
+    protected $readableName = 'Phoenix CRM - Module Make';
     protected $description = 'Spawns a module with the details provided';
 
     protected $files;

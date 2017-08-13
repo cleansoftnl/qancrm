@@ -24,7 +24,7 @@ class InMaintenanceMiddleware
                 // check if this route is the login page - we want to be able to login
                 if (!in_array($request->url(), [route('pxcms.user.login'), route('pxcms.user.logout')])) {
                     // if none of those things apply, throw the exception
-                    throw new \Cms\Modules\Core\Exceptions\InMaintenanceException('This site is in maintenance.');
+                    throw new \Modules\Core\Exceptions\InMaintenanceException('This site is in maintenance.');
                 }
 
             }

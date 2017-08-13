@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Core\Providers;
+namespace Modules\Core\Providers;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Dingo\Api\Routing\Router as ApiRouter;

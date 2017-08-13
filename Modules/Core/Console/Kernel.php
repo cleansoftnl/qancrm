@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Core\Console;
+namespace Modules\Core\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;

@@ -26,19 +26,19 @@ class Kernel extends HttpKernel
     protected $middlewareGroups = [
         'web' => [
             \Cms\Http\Middleware\EncryptCookies::class,
-            \Cms\Modules\Core\Http\Middleware\ForceSecureMiddleware::class,
-            \Cms\Modules\Core\Http\Middleware\CORSMiddleware::class,
+            \Modules\Core\Http\Middleware\ForceSecureMiddleware::class,
+            \Modules\Core\Http\Middleware\CORSMiddleware::class,
             \Cms\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
             \BeatSwitch\Lock\Integrations\Laravel\Middleware\InitLockAwareTrait::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \Cms\Http\Middleware\VerifyCsrfToken::class,
-            \Cms\Modules\Core\Http\Middleware\ParseJsToBottomMiddleware::class,
-            \Cms\Modules\Core\Http\Middleware\MinifyHtmlMiddleware::class,
-            \Cms\Modules\Auth\Http\Middleware\EnforceUserActionsMiddleware::class,
+            \Modules\Core\Http\Middleware\ParseJsToBottomMiddleware::class,
+            \Modules\Core\Http\Middleware\MinifyHtmlMiddleware::class,
+            \Modules\Auth\Http\Middleware\EnforceUserActionsMiddleware::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
-            \Cms\Modules\Core\Http\Middleware\MenuMiddleware::class,
+            \Modules\Core\Http\Middleware\MenuMiddleware::class,
         ],
         'api' => [
             'throttle:60,1',
@@ -52,7 +52,7 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth' => \Cms\Modules\Auth\Http\Middleware\AuthMiddleware::class,
+        'auth' => \Modules\Auth\Http\Middleware\AuthMiddleware::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
         'can' => \Illuminate\Auth\Middleware\Authorize::class,

@@ -25,7 +25,7 @@ return [
             $theme->add('js', 'themes/' . $themeName . '/js/all.js');
         },
         'beforeRenderTheme' => function ($theme) {
-            $navService = (new \Cms\Modules\Core\Services\NavigationService());
+            $navService = (new \Modules\Core\Services\NavigationService());
             // grab the navigations
             $navService->boot();
 

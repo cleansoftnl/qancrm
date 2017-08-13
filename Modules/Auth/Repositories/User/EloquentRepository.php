@@ -1,10 +1,10 @@
 <?php
-namespace Cms\Modules\Auth\Repositories\User;
+namespace Modules\Auth\Repositories\User;
 
-use Cms\Modules\Auth\Events\UserPasswordWasChanged;
-use Cms\Modules\Auth\Http\Requests\ChangePasswordRequest;
-use Cms\Modules\Auth\Repositories\User\RepositoryInterface as UserRepository;
-use Cms\Modules\Core\Repositories\BaseEloquentRepository;
+use Modules\Auth\Events\UserPasswordWasChanged;
+use Modules\Auth\Http\Requests\ChangePasswordRequest;
+use Modules\Auth\Repositories\User\RepositoryInterface as UserRepository;
+use Modules\Core\Repositories\BaseEloquentRepository;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 

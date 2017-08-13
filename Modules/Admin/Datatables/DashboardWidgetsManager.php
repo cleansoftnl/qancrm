@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Admin\Datatables;
+namespace Modules\Admin\Datatables;
 class DashboardWidgetsManager
 {
     public function boot()
@@ -32,7 +32,7 @@ class DashboardWidgetsManager
                 'sort_order' => 'asc',
                 'source' => 'admin.config.dashboard',
                 'collection' => function () {
-                    $model = 'Cms\Modules\Admin\Models\Widget';
+                    $model = 'Modules\Admin\Models\Widget';
                     return $model::with('options')->get();
                 },
             ],

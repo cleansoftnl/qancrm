@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Core\Http\Controllers;
+namespace Modules\Core\Http\Controllers;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\File;

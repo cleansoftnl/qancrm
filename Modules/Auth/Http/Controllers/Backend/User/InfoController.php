@@ -1,7 +1,7 @@
 <?php
-namespace Cms\Modules\Auth\Http\Controllers\Backend\User;
+namespace Modules\Auth\Http\Controllers\Backend\User;
 
-use Cms\Modules\Auth\Models\User;
+use Modules\Auth\Models\User;
 use Illuminate\Http\Request;
 
 class InfoController extends BaseUserController

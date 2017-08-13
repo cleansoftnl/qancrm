@@ -1,10 +1,10 @@
 <?php
-namespace Cms\Modules\Admin\Http\Controllers\Backend\Navigation;
+namespace Modules\Admin\Http\Controllers\Backend\Navigation;
 
-use Cms\Modules\Admin\Http\Controllers\Backend\BaseAdminController;
-use Cms\Modules\Admin\Http\Requests\BackendCreateNavLinkRequest;
-use Cms\Modules\Core\Models\Navigation;
-use Cms\Modules\Core\Models\NavigationLink;
+use Modules\Admin\Http\Controllers\Backend\BaseAdminController;
+use Modules\Admin\Http\Requests\BackendCreateNavLinkRequest;
+use Modules\Core\Models\Navigation;
+use Modules\Core\Models\NavigationLink;
 use Former\Facades\Former;
 use Illuminate\Http\Request;
 

@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Admin\Datatables;
+namespace Modules\Admin\Datatables;
 class NavigationManager
 {
     public function boot()
@@ -31,7 +31,7 @@ class NavigationManager
                 'sort_order' => 'desc',
                 'source' => 'admin.nav.manager',
                 'collection' => function () {
-                    $model = 'Cms\Modules\Core\Models\Navigation';
+                    $model = 'Modules\Core\Models\Navigation';
                     return $model::with('linkCount')->get();
                 },
             ],

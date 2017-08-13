@@ -1,7 +1,7 @@
 <?php
-namespace Cms\Modules\Admin\Http\Controllers\Backend\Config;
+namespace Modules\Admin\Http\Controllers\Backend\Config;
 
-use Cms\Modules\Admin\Services\ConfigService;
+use Modules\Admin\Services\ConfigService;
 
 class WebsiteController extends BaseConfigController
 {

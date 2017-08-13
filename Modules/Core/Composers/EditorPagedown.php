@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Core\Composers;
+namespace Modules\Core\Composers;
 
 use Teepluss\Theme\Contracts\Theme;
 

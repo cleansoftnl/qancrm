@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Auth\Console\Commands;
+namespace Modules\Auth\Console\Commands;
 
 use Illuminate\Console\Command;
 use Carbon\Carbon;
@@ -16,7 +16,7 @@ class ModulePublishPermissionsCommand extends Command
         $this->info('Making sure all the config files are up to date.');
         $this->callSilent('module:publish-config', ['--force' => null]);
         $permissionGroups = get_array_column(config('cms'), 'permissions');
-        $seedModel = 'Cms\Modules\Auth\Models\Permission';
+        $seedModel = 'Modules\Auth\Models\Permission';
         $this->comment('Processing Permissions...');
         // loop over the permissions
         foreach ($permissionGroups as $group) {

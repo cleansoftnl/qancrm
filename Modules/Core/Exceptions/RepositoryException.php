@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Core\Exceptions;
+namespace Modules\Core\Exceptions;
 class RepositoryException extends \Exception
 {
 }

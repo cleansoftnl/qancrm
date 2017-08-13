@@ -16,7 +16,7 @@ return [
     | Available drivers: array, database
     |
     */
-    'driver' => \Cms\Modules\Auth\Models\CustomLockDriver::class,
+    'driver' => \Modules\Auth\Models\CustomLockDriver::class,
     /*
     |--------------------------------------------------------------------------
     | User Caller Type

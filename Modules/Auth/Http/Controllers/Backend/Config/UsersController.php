@@ -1,7 +1,7 @@
 <?php
-namespace Cms\Modules\Auth\Http\Controllers\Backend\Config;
+namespace Modules\Auth\Http\Controllers\Backend\Config;
 
-use Cms\Modules\Admin\Http\Controllers\Backend\Config\BaseConfigController;
+use Modules\Admin\Http\Controllers\Backend\Config\BaseConfigController;
 
 class UsersController extends BaseConfigController
 {

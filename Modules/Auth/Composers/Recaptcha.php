@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Auth\Composers;
+namespace Modules\Auth\Composers;
 
 use Illuminate\Contracts\View\View;
 

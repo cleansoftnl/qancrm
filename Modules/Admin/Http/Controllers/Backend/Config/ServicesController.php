@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Admin\Http\Controllers\Backend\Config;
+namespace Modules\Admin\Http\Controllers\Backend\Config;
 class ServicesController extends BaseConfigController
 {
     public function getIndex()

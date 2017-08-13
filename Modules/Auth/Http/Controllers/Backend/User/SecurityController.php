@@ -1,9 +1,9 @@
 <?php
-namespace Cms\Modules\Auth\Http\Controllers\Backend\User;
+namespace Modules\Auth\Http\Controllers\Backend\User;
 
-use Cms\Modules\Auth\Http\Requests\BackendUpdatePasswordRequest;
-use Cms\Modules\Auth\Models\User;
-use Cms\Modules\Auth as Auth;
+use Modules\Auth\Http\Requests\BackendUpdatePasswordRequest;
+use Modules\Auth\Models\User;
+use Modules\Auth as Auth;
 use Carbon\Carbon;
 
 class SecurityController extends BaseUserController

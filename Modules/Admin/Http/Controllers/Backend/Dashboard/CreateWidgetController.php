@@ -1,9 +1,9 @@
 <?php
-namespace Cms\Modules\Admin\Http\Controllers\Backend\Dashboard;
+namespace Modules\Admin\Http\Controllers\Backend\Dashboard;
 
-use Cms\Modules\Admin\Http\Controllers\Backend\BaseAdminController;
-use Cms\Modules\Admin\Models\Widget;
-use Cms\Modules\Admin\Services\DashboardService;
+use Modules\Admin\Http\Controllers\Backend\BaseAdminController;
+use Modules\Admin\Models\Widget;
+use Modules\Admin\Services\DashboardService;
 use Illuminate\Http\Request;
 
 class CreateWidgetController extends BaseAdminController

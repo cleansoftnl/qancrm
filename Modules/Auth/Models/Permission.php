@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Auth\Models;
+namespace Modules\Auth\Models;
 class Permission extends BaseModel
 {
     protected $table = 'permissions';

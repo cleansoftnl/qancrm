@@ -1,12 +1,12 @@
 <?php
-namespace Cms\Modules\Auth\Http\Controllers\Frontend\Auth;
+namespace Modules\Auth\Http\Controllers\Frontend\Auth;
 
-use Cms\Modules\Auth\Http\Requests\ChangePasswordRequest;
-use Cms\Modules\Auth\Http\Requests\Frontend2faRequest;
-use Cms\Modules\Auth\Http\Requests\FrontendLoginRequest;
-use Cms\Modules\Auth\Http\Requests\FrontendRegisterRequest;
-use Cms\Modules\Auth\Repositories\User\RepositoryInterface as UserRepo;
-use Cms\Modules\Core\Http\Controllers\BaseFrontendController;
+use Modules\Auth\Http\Requests\ChangePasswordRequest;
+use Modules\Auth\Http\Requests\Frontend2faRequest;
+use Modules\Auth\Http\Requests\FrontendLoginRequest;
+use Modules\Auth\Http\Requests\FrontendRegisterRequest;
+use Modules\Auth\Repositories\User\RepositoryInterface as UserRepo;
+use Modules\Core\Http\Controllers\BaseFrontendController;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -22,7 +22,7 @@ class AuthController extends BaseFrontendController
     /**
      * User Repository.
      *
-     * @var \Cms\Modules\Auth\Repositories\User\RepositoryInterface
+     * @var \Modules\Auth\Repositories\User\RepositoryInterface
      */
     protected $user;
 
@@ -32,7 +32,7 @@ class AuthController extends BaseFrontendController
     /**
      * Create a new authentication controller instance.
      *
-     * @param \Cms\Modules\Auth\Repositories\User\RepositoryInterface $user
+     * @param \Modules\Auth\Repositories\User\RepositoryInterface $user
      */
     public function __construct(UserRepo $user)
     {
@@ -65,12 +65,12 @@ class AuthController extends BaseFrontendController
         // the IP address of the client making these requests into this application.
         $throttles = ($this->isUsingThrottlesLoginsTrait() && config('cms.auth.config.users.login.throttlingEnabled', 'false') === 'true');
         if ($throttles && $this->hasTooManyLoginAttempts($request)) {
-            event(new \Cms\Modules\Auth\Events\NotifyUser(Auth::id(), 'auth::notify.account.lockout'));
+            event(new \Modules\Auth\Events\NotifyUser(Auth::id(), 'auth::notify.account.lockout'));
             return $this->sendLockoutResponse($request);
         }
         // grab the credentials, and use them to attempt an auth
         if ($this->attemptLogin($request)) {
-            $events = event(new \Cms\Modules\Auth\Events\UserHasLoggedIn(Auth::id()));
+            $events = event(new \Modules\Auth\Events\UserHasLoggedIn(Auth::id()));
             return redirect()->intended(route(config('cms.auth.paths.redirect_login', 'pxcms.pages.home')));
         }
         // If the login attempt was unsuccessful we will increment the number of attempts
@@ -141,18 +141,18 @@ class AuthController extends BaseFrontendController
      */
     public function postRegister(FrontendRegisterRequest $request)
     {
-        event(new \Cms\Modules\Auth\Events\UserIsRegistering($request));
+        event(new \Modules\Auth\Events\UserIsRegistering($request));
         // create the user
         $user = $this->user->createWithRoles(
             $request->all(),
             config('cms.auth.config.roles.user_group'),
             config('cms.auth.config.users.require_activating', false)
         );
-        event(new \Cms\Modules\Auth\Events\UserHasRegistered($user->id));
+        event(new \Modules\Auth\Events\UserHasRegistered($user->id));
         // if the user requires activating, then dont log them in automatically
         if (config('cms.auth.config.users.require_activating', false) === false) {
             $this->auth->login($user);
-            event(new \Cms\Modules\Auth\Events\UserHasLoggedIn($user->id));
+            event(new \Modules\Auth\Events\UserHasLoggedIn($user->id));
         }
         // redirect them back
         return redirect(route(config('cms.auth.config.paths.redirect_register', 'pxcms.pages.home')))

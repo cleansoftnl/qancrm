@@ -1,8 +1,8 @@
 <?php
-namespace Cms\Modules\Admin\Http\Controllers\Backend\Dashboard;
+namespace Modules\Admin\Http\Controllers\Backend\Dashboard;
 
-use Cms\Modules\Admin\Http\Controllers\Backend\BaseAdminController;
-use Cms\Modules\Admin\Services\DashboardService;
+use Modules\Admin\Http\Controllers\Backend\BaseAdminController;
+use Modules\Admin\Services\DashboardService;
 use Collective\Html\HtmlBuilder;
 
 class DashboardController extends BaseAdminController

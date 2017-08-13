@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Core\Http\Controllers\Frontend;
+namespace Modules\Core\Http\Controllers\Frontend;
 class PagesController extends BaseCoreController
 {
     public function getHomepage()

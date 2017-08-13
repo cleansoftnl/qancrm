@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Auth\Datatables;
+namespace Modules\Auth\Datatables;
 class PermissionManager
 {
     public function boot()
@@ -30,7 +30,7 @@ class PermissionManager
                 'sort_order' => 'desc',
                 'source' => 'admin.permission.manager',
                 'collection' => function () {
-                    $model = 'Cms\Modules\Auth\Models\Permission';
+                    $model = 'Modules\Auth\Models\Permission';
                     return $model::with('roles')->get();
                 },
             ],

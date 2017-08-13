@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Core\Models;
+namespace Modules\Core\Models;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;

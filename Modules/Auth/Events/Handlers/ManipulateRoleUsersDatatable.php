@@ -1,8 +1,8 @@
 <?php
-namespace Cms\Modules\Auth\Events\Handlers;
+namespace Modules\Auth\Events\Handlers;
 
-use Cms\Modules\Admin\Events\GotDatatableConfig;
-use Cms\Modules\Auth\Models\Role;
+use Modules\Admin\Events\GotDatatableConfig;
+use Modules\Auth\Models\Role;
 use Illuminate\Support\Facades\Request;
 
 class ManipulateRoleUsersDatatable

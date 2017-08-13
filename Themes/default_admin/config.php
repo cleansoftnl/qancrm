@@ -25,7 +25,7 @@ return [
         },
         // add dropdown-menu classes and such for the bootstrap toggle
         'beforeRenderTheme' => function ($theme) {
-            $navService = (new \Cms\Modules\Core\Services\NavigationService());
+            $navService = (new \Modules\Core\Services\NavigationService());
             // grab the navigations
             $navService->boot();
             // theme specific nav stuff

@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>Phoenix CMS</title>
+  <title>Phoenix CRM</title>
 
   <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 
@@ -45,7 +45,7 @@
 <body>
 <div class="container">
   <div class="content">
-    <div class="title">Phoenix CMS</div>
+    <div class="title">Phoenix CRM</div>
     <div class="quote">This site is not quite ready to be live. Watch this space!</div>
   </div>
 </div>

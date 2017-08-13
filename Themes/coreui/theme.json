@@ -1,7 +1,7 @@
 {
     "name": "default",
     "author": "Twitter Bootstrap 3",
-    "description": "Default Bootstrap Theme for Phoenix CMS",
+    "description": "Default Bootstrap Theme for Qan CRM",
     "site": "http://cysha.co.uk",
     "type": "frontend",
     "version": "1.0"

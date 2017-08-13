@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Admin\Composers;
+namespace Modules\Admin\Composers;
 
 use GuzzleHttp\Client;
 use File;

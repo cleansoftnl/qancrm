@@ -10,7 +10,7 @@ return [
                     'order' => 1,
                     'permission' => 'manage@auth_user',
                     'activePattern' => '\/{backend}\/users\/*',
-                    'label' => 'Cms\Modules\Auth\Composers\BackendSidebar@userCount',
+                    'label' => 'Modules\Auth\Composers\BackendSidebar@userCount',
                 ],
                 [
                     'route' => 'admin.role.manager',
@@ -19,7 +19,7 @@ return [
                     'order' => 2,
                     'permission' => 'manage@auth_role',
                     'activePattern' => '\/{backend}\/roles\/*',
-                    'label' => 'Cms\Modules\Auth\Composers\BackendSidebar@roleCount',
+                    'label' => 'Modules\Auth\Composers\BackendSidebar@roleCount',
                 ],
                 [
                     'route' => 'admin.apikey.manager',
@@ -28,7 +28,7 @@ return [
                     'order' => 4,
                     'permission' => 'api@auth_config',
                     'activePattern' => '\/{backend}\/apikey\/*',
-                    'label' => 'Cms\Modules\Auth\Composers\BackendSidebar@apikeyCount',
+                    'label' => 'Modules\Auth\Composers\BackendSidebar@apikeyCount',
                 ],
             ],
         ],

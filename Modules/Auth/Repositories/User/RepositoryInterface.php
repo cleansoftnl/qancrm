@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Auth\Repositories\User;
+namespace Modules\Auth\Repositories\User;
 /**
  * Interface UserRepository.
  */

@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Admin\Database\Seeders;
+namespace Modules\Admin\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;

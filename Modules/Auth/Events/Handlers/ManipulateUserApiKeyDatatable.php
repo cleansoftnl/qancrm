@@ -1,7 +1,7 @@
 <?php
-namespace Cms\Modules\Auth\Events\Handlers;
+namespace Modules\Auth\Events\Handlers;
 
-use Cms\Modules\Admin\Events\GotDatatableConfig;
+use Modules\Admin\Events\GotDatatableConfig;
 use Illuminate\Support\Facades\Request;
 
 class ManipulateUserApiKeyDatatable
@@ -30,7 +30,7 @@ class ManipulateUserApiKeyDatatable
         array_set($event->config, 'options.source', null);
         // rebuild the collection
         array_set($event->config, 'options.collection', function () use ($user) {
-            $model = 'Cms\Modules\Auth\Models\ApiKey';
+            $model = 'Modules\Auth\Models\ApiKey';
             return $model::where('user_id', $user->id)->get();
         });
         // rejig the columns

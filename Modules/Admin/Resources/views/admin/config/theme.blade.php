@@ -7,7 +7,7 @@
   <?php
   $i = 0;
   foreach (array('frontend', 'backend') as $set):
-    $themes = Cms\Modules\Core\Models\Theme::{
+    $themes = Modules\Core\Models\Theme::{
     'get' . $set}();
 
         if ($set == 'frontend') {

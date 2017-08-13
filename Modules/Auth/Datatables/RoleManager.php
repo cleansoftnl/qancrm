@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Auth\Datatables;
+namespace Modules\Auth\Datatables;
 class RoleManager
 {
     public function boot()
@@ -34,7 +34,7 @@ class RoleManager
                 'sort_order' => 'desc',
                 'source' => 'admin.role.manager',
                 'collection' => function () {
-                    $model = 'Cms\Modules\Auth\Models\Role';
+                    $model = 'Modules\Auth\Models\Role';
                     return $model::with('users')->get();
                 },
             ],

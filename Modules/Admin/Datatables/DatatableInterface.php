@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Admin\Datatables;
+namespace Modules\Admin\Datatables;
 interface DatatableInterface
 {
     public static function boot();

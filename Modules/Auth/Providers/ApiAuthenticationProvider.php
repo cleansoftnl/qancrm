@@ -1,11 +1,11 @@
 <?php
-namespace Cms\Modules\Auth\Providers;
+namespace Modules\Auth\Providers;
 
 use Illuminate\Http\Request;
 use Dingo\Api\Routing\Route;
 use Dingo\Api\Contract\Auth\Provider;
 use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
-use Cms\Modules\Auth\Models\ApiKey;
+use Modules\Auth\Models\ApiKey;
 use Illuminate\Auth\AuthManager;
 
 class ApiAuthenticationProvider implements Provider

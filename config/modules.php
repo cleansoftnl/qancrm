@@ -8,7 +8,7 @@ return [
     | Default module namespace.
     |
     */
-    'namespace' => 'Cms\Modules',
+    'namespace' => 'Modules',
     /*
     |--------------------------------------------------------------------------
     | Module Stubs

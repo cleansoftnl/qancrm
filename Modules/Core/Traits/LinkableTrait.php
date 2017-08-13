@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Core\Traits;
+namespace Modules\Core\Traits;
 trait LinkableTrait
 {
     public function linkableConstructor()

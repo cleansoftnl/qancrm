@@ -1,7 +1,7 @@
 {
     "name": "cysha/theme-default",
     "type": "pxcms-themes",
-    "description": "Default Theme for Phoenix CMS",
+    "description": "Default Theme for Qan CRM",
     "license": "MIT",
     "authors": [
         { "name": "xLink (Dan Aldridge)", "email": "xLink@cybershade.org" }

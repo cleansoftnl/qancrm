@@ -1,7 +1,7 @@
 {
     "name": "cysha/module-admin",
     "type": "pxcms-module",
-    "description": "Administration Module for Phoenix CMS",
+    "description": "Administration Module for Qan CRM",
     "license": "MIT",
     "authors": [
         { "name": "xLink (Dan Aldridge)", "email": "xLink@cybershade.org" }

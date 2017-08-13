@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Auth\Providers;
+namespace Modules\Auth\Providers;
 
 use BeatSwitch\Lock\Integrations\Laravel\LockServiceProvider;
 use BeatSwitch\Lock\Drivers\ArrayDriver;

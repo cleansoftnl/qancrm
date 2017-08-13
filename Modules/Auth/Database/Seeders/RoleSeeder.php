@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Auth\Database\Seeders;
+namespace Modules\Auth\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Carbon\Carbon;
@@ -34,7 +34,7 @@ class RoleSeeder extends Seeder
                 'updated_at' => Carbon::now(),
             ],
         ];
-        $seedModel = 'Cms\Modules\Auth\Models\Role';
+        $seedModel = 'Modules\Auth\Models\Role';
         $roles = with(new $seedModel())->insert($models);
     }
 }

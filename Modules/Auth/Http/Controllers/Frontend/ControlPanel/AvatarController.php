@@ -1,8 +1,8 @@
 <?php
-namespace Cms\Modules\Auth\Http\Controllers\Frontend\ControlPanel;
+namespace Modules\Auth\Http\Controllers\Frontend\ControlPanel;
 
-use Cms\Modules\Auth\Http\Requests\FrontendAvatarRequest;
-use Cms\Modules\Auth\Http\Requests\FrontendAvatarUploadRequest;
+use Modules\Auth\Http\Requests\FrontendAvatarRequest;
+use Modules\Auth\Http\Requests\FrontendAvatarUploadRequest;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 

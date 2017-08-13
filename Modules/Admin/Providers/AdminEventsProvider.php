@@ -1,9 +1,9 @@
 <?php
-namespace Cms\Modules\Admin\Providers;
+namespace Modules\Admin\Providers;
 
-use Cms\Modules\Core\Providers\BaseEventsProvider;
-use Cms\Modules\Core;
-use Cms\Modules\Admin;
+use Modules\Core\Providers\BaseEventsProvider;
+use Modules\Core;
+use Modules\Admin;
 use Cache;
 
 class AdminEventsProvider extends BaseEventsProvider
@@ -14,8 +14,8 @@ class AdminEventsProvider extends BaseEventsProvider
      * @var array
      */
     protected $listen = [
-        'Cms\Modules\Admin\Events\ConfigWasSaved' => [
-            'Cms\Modules\Admin\Events\Handlers\SetDebug',
+        'Modules\Admin\Events\ConfigWasSaved' => [
+            'Modules\Admin\Events\Handlers\SetDebug',
         ],
     ];
 

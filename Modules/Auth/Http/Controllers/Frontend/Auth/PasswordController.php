@@ -1,7 +1,7 @@
 <?php
-namespace Cms\Modules\Auth\Http\Controllers\Frontend\Auth;
+namespace Modules\Auth\Http\Controllers\Frontend\Auth;
 
-use Cms\Modules\Core\Http\Controllers\BaseFrontendController;
+use Modules\Core\Http\Controllers\BaseFrontendController;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class PasswordController extends BaseFrontendController

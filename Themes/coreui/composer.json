@@ -1,7 +1,7 @@
 {
     "name": "cysha/theme-coreui",
     "type": "pxcms-themes",
-    "description": "theme-coreui Theme for Phoenix CMS",
+    "description": "theme-coreui Theme for Qan CRM",
     "license": "MIT",
     "authors": [
         { "name": "xLink (Dan Aldridge)", "email": "xLink@cybershade.org" }

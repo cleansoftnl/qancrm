@@ -1,11 +1,11 @@
 <?php
-namespace Cms\Modules\Admin\Http\Controllers\Backend\Navigation;
+namespace Modules\Admin\Http\Controllers\Backend\Navigation;
 
-use Cms\Modules\Admin\Datatables\NavigationManager;
-use Cms\Modules\Admin\Http\Controllers\Backend\BaseAdminController;
-use Cms\Modules\Admin\Http\Requests\BackendCreateNavigationRequest;
-use Cms\Modules\Admin\Traits\DataTableTrait;
-use Cms\Modules\Core\Models\Navigation;
+use Modules\Admin\Datatables\NavigationManager;
+use Modules\Admin\Http\Controllers\Backend\BaseAdminController;
+use Modules\Admin\Http\Requests\BackendCreateNavigationRequest;
+use Modules\Admin\Traits\DataTableTrait;
+use Modules\Core\Models\Navigation;
 use Former\Facades\Former;
 
 class NavController extends BaseAdminController

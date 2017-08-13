@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Core\Http\Controllers;
+namespace Modules\Core\Http\Controllers;
 
 use Dingo\Api\Routing\Helpers;
 use Illuminate\Support\Facades\Response;

@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Core\Console\Commands;
+namespace Modules\Core\Console\Commands;
 
 use Illuminate\Console\Command;
 use File;

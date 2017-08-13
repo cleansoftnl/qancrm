@@ -1,7 +1,7 @@
 {
     "name": "cysha/theme-adminlte",
     "type": "pxcms-themes",
-    "description": "AdminLTE Theme for Phoenix CMS",
+    "description": "AdminLTE Theme for Qan CRM",
     "license": "MIT",
     "authors": [
         { "name": "Abdullah Almsaeed", "email": "abdullah@almsaeedstudio.com" },

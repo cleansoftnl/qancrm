@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Admin\Providers;
+namespace Modules\Admin\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\AliasLoader;

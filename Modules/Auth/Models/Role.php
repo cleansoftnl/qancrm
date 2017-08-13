@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Auth\Models;
+namespace Modules\Auth\Models;
 
 use BeatSwitch\Lock\Callers\Caller;
 

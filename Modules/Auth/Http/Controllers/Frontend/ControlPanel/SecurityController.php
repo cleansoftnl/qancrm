@@ -1,9 +1,9 @@
 <?php
-namespace Cms\Modules\Auth\Http\Controllers\Frontend\ControlPanel;
+namespace Modules\Auth\Http\Controllers\Frontend\ControlPanel;
 
-use Cms\Modules\Auth\Repositories\User\RepositoryInterface as UserRepo;
-use Cms\Modules\Auth\Http\Requests\Frontend2faRequest;
-use Cms\Modules\Auth\Http\Requests\ChangePasswordRequest;
+use Modules\Auth\Repositories\User\RepositoryInterface as UserRepo;
+use Modules\Auth\Http\Requests\Frontend2faRequest;
+use Modules\Auth\Http\Requests\ChangePasswordRequest;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Auth;
 use PragmaRX\Google2FA\Google2FA;

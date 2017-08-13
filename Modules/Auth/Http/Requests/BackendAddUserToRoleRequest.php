@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Auth\Http\Requests;
+namespace Modules\Auth\Http\Requests;
 
 use Cms\Http\Requests\Request;
 

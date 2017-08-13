@@ -1,7 +1,7 @@
 {
     "name": "Admin",
     "alias": "admin",
-    "description": "Administration Module for Phoenix CMS",
+    "description": "Administration Module for Qan CRM",
     "authors": [
         { "name": "xLink (Dan Aldridge)", "email": "xLink@cybershade.org" }
     ],
@@ -12,10 +12,10 @@
     "active": 1,
     "order": 2,
     "providers": [
-        "Cms\\Modules\\Admin\\Providers\\AdminModuleServiceProvider",
-        "Cms\\Modules\\Admin\\Providers\\AdminRoutingProvider",
-        "Cms\\Modules\\Admin\\Providers\\AdminEventsProvider",
-        "Cms\\Modules\\Admin\\Providers\\AdminServicesProvider"
+        "Modules\\Admin\\Providers\\AdminModuleServiceProvider",
+        "Modules\\Admin\\Providers\\AdminRoutingProvider",
+        "Modules\\Admin\\Providers\\AdminEventsProvider",
+        "Modules\\Admin\\Providers\\AdminServicesProvider"
     ],
     "aliases":{
     },

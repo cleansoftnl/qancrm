@@ -1,8 +1,8 @@
 <?php
-namespace Cms\Modules\Auth\Http\Controllers\Backend\Api;
+namespace Modules\Auth\Http\Controllers\Backend\Api;
 
 use BeatSwitch\Lock\Integrations\Laravel\Facades\Lock;
-use Cms\Modules\Auth as Auth;
+use Modules\Auth as Auth;
 use Illuminate\Http\Request;
 
 class RemoveController extends BaseApiController

@@ -147,9 +147,9 @@ return [
         Cms\Providers\EventServiceProvider::class,
         // Cms\Providers\RouteServiceProvider::class,
         /*
-         * CMS Package Service Providers
+         * CRM Package Service Providers
          */
-        \Cms\Modules\Core\Providers\CmsModulesProvider::class,
+        \Modules\Core\Providers\CmsModulesProvider::class,
     ],
     /*
     |--------------------------------------------------------------------------

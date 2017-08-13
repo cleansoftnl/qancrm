@@ -1,7 +1,7 @@
 {
     "name": "Core",
     "alias": "core",
-    "description": "Core Module for Phoenix CMS v1",
+    "description": "Core Module for Qan CRM v1",
     "authors": [
         { "name": "xLink (Dan Aldridge)", "email": "xLink@cybershade.org" }
     ],
@@ -12,9 +12,9 @@
     "active": 1,
     "order": 0,
     "providers": [
-        "Cms\\Modules\\Core\\Providers\\CoreModuleServiceProvider",
-        "Cms\\Modules\\Core\\Providers\\CmsConfigProvider",
-        "Cms\\Modules\\Core\\Providers\\CoreRoutingProvider",
+        "Modules\\Core\\Providers\\CoreModuleServiceProvider",
+        "Modules\\Core\\Providers\\CmsConfigProvider",
+        "Modules\\Core\\Providers\\CoreRoutingProvider",
         "Dingo\\Api\\Provider\\LaravelServiceProvider",
         "Collective\\Html\\HtmlServiceProvider",
         "Teepluss\\Theme\\ThemeServiceProvider",

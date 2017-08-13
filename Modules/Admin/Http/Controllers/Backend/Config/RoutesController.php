@@ -1,5 +1,5 @@
 <?php
-namespace Cms\Modules\Admin\Http\Controllers\Backend\Config;
+namespace Modules\Admin\Http\Controllers\Backend\Config;
 class RoutesController extends BaseConfigController
 {
     public function getIndex()

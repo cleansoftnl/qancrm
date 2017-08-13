@@ -1,7 +1,7 @@
 {
     "name": "cysha/theme-admin-charisma",
     "type": "pxcms-themes",
-    "description": "theme-admin-charisma Theme for Phoenix CMS",
+    "description": "theme-admin-charisma Theme for Qan CRM",
     "license": "MIT",
     "authors": [
         { "name": "xLink", "email": "xLink@cybershade.org" }

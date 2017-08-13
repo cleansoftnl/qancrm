@@ -1,11 +1,11 @@
 <?php
-namespace Cms\Modules\Auth\Http\Controllers\Backend\Role;
+namespace Modules\Auth\Http\Controllers\Backend\Role;
 
-use Cms\Modules\Admin\Traits\DataTableTrait;
-use Cms\Modules\Auth\Datatables\UserManager;
-use Cms\Modules\Auth\Http\Requests\BackendAddUserToRoleRequest;
-use Cms\Modules\Auth\Models\Role;
-use Cms\Modules\Auth\Models\User;
+use Modules\Admin\Traits\DataTableTrait;
+use Modules\Auth\Datatables\UserManager;
+use Modules\Auth\Http\Requests\BackendAddUserToRoleRequest;
+use Modules\Auth\Models\Role;
+use Modules\Auth\Models\User;
 
 class UserController extends BaseRoleController
 {

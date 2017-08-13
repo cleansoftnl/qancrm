@@ -1,7 +1,7 @@
 <?php
-namespace Cms\Modules\Core\Models;
+namespace Modules\Core\Models;
 
-use Cms\Modules\Core\Traits\LinkableTrait;
+use Modules\Core\Traits\LinkableTrait;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Request;
 

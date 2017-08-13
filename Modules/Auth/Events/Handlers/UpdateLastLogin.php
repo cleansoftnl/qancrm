@@ -1,7 +1,7 @@
 <?php
-namespace Cms\Modules\Auth\Events\Handlers;
+namespace Modules\Auth\Events\Handlers;
 
-use Cms\Modules\Auth\Events\UserHasLoggedIn;
+use Modules\Auth\Events\UserHasLoggedIn;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 

@@ -1,10 +1,10 @@
 <?php
-namespace Cms\Modules\Admin\Http\Controllers\Backend\Modules;
+namespace Modules\Admin\Http\Controllers\Backend\Modules;
 
-use Cms\Modules\Admin\Datatables\ModuleManager;
-use Cms\Modules\Admin\Http\Controllers\Backend\BaseAdminController;
-use Cms\Modules\Admin\Traits\DataTableTrait;
-use Cms\Modules\Core\Models\Module;
+use Modules\Admin\Datatables\ModuleManager;
+use Modules\Admin\Http\Controllers\Backend\BaseAdminController;
+use Modules\Admin\Traits\DataTableTrait;
+use Modules\Core\Models\Module;
 
 class ModuleController extends BaseAdminController
 {

@@ -1,9 +1,9 @@
 <?php
 namespace Cms\Exceptions;
 
-use Cms\Modules\Pages\Http\Controllers\Frontend\PagesController;
-use Cms\Modules\Core\Exceptions\NotInstalledException;
-use Cms\Modules\Pages\Models\Page;
+use Modules\Pages\Http\Controllers\Frontend\PagesController;
+use Modules\Core\Exceptions\NotInstalledException;
+use Modules\Pages\Models\Page;
 use Exception;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Auth\AuthenticationException;
@@ -54,10 +54,10 @@ class Handler extends ExceptionHandler
         //if (config('app.debug') && class_exists('\Whoops\Run')) {
         return $this->renderExceptionWithWhoops($e, $request);
         //}
-        if ($e instanceof \Cms\Modules\Core\Exceptions\NotInstalledException) {
+        if ($e instanceof \Modules\Core\Exceptions\NotInstalledException) {
             return $this->renderNotInstalled($e);
         }
-        if ($e instanceof \Cms\Modules\Core\Exceptions\InMaintenanceException) {
+        if ($e instanceof \Modules\Core\Exceptions\InMaintenanceException) {
             return $this->renderInMaintenance($e);
         }
         if ($e instanceof \Illuminate\Session\TokenMismatchException) {
