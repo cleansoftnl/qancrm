@@ -76,7 +76,7 @@ class Theme implements Arrayable, Jsonable, JsonSerializable
      */
     public static function getLayouts()
     {
-        $theme = self::themeInfo(config('cms.core.app.themes.frontend', 'default'));
+        $theme = self::themeInfo(config('cms.core.app.themes.frontend', 'coreui'));
         $dir = key($theme);
         if (!File::isDirectory($dir)) {
             return [];

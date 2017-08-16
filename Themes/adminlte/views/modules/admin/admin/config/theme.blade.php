@@ -13,10 +13,10 @@
 
             if ($set == 'frontend') {
               $setting = 'cms.core.app.themes.frontend';
-              $settingValue = config($setting, 'default');
+              $settingValue = config($setting, 'startbootstrap');
             } else {
               $setting = 'cms.core.app.themes.backend';
-              $settingValue = config($setting, 'default_admin');
+              $settingValue = config($setting, 'startbootstrap_admin');
             }
         ?>
     <div class="tab-pane{{ ( $i++ == 0 ? ' active' : '') }}" id="{{ strtolower($set) }}">

@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="panel-body">
-      <h4>Direct Login</h4>
+      <h4>Charisma Login</h4>
       {!! Theme::partial('core._login_form') !!}
     </div>
   </div>

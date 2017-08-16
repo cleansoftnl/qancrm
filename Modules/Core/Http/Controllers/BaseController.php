@@ -88,8 +88,9 @@ class BaseController extends Controller
         $this->file = $file;
         // set some theme options up
         if (!isset($this->themeName)) {
-            $this->themeName = config('cms.core.app.themes.frontend', 'default');
+            $this->themeName = config('cms.core.app.themes.frontend', 'coreui');
         }
+
         try {
             $this->theme = $theme->uses($this->themeName)->layout($this->layout);
         } catch (\Teepluss\Theme\UnknownThemeException $e) {

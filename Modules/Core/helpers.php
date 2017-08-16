@@ -188,9 +188,18 @@ if (!function_exists('getCurrentTheme')) {
     function getCurrentTheme()
     {
         if (Request::is('admin/*')) {
-            return config('cms.core.app.themes.backend', 'default_admin');
+            return config('cms.core.app.themes.backend', 'coreui_admin');
         }
-        return config('cms.core.app.themes.frontend', 'default');
+        if (Request::is('admincp/*')) {
+            return config('cms.core.app.themes.backend', 'coreui_admin');
+        }
+        if (Request::is('systemcp/*')) {
+            return config('cms.core.app.themes.backend', 'coreui_admin');
+        }
+        if (Request::is('emailcp/*')) {
+            return config('cms.core.app.themes.backend', 'coreui_admin');
+        }
+        return config('cms.core.app.themes.frontend', 'coreui');
     }
 }
 if (!function_exists('escape')) {

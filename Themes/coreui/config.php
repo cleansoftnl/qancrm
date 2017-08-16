@@ -1,6 +1,6 @@
 <?php
 return [
-    'name' => 'default',
+    'name' => 'coreui',
     'inherit' => null, //default
     'events' => [
         'before' => function ($theme) {
