@@ -12,7 +12,9 @@ class CoreDatabaseSeeder extends Seeder
     public function run()
     {
         Model::unguard();
-        $this->call(__NAMESPACE__ . '\ConfigTableSeeder');
-        $this->call(__NAMESPACE__ . '\NavTableSeeder');
+        //$this->call(__NAMESPACE__ . '\ConfigTableSeeder');
+        //$this->call(__NAMESPACE__ . '\NavTableSeeder');
+        //$this->call(__NAMESPACE__ . '\PermissionTableSeeder');
+        $this->call(__NAMESPACE__ . '\RoleTableSeeder');
     }
 }

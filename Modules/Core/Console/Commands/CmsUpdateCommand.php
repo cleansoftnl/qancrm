@@ -3,8 +3,8 @@ namespace Modules\Core\Console\Commands;
 class CmsUpdateCommand extends CmsInstallCommand
 {
     protected $name = 'cms:update';
-    protected $readableName = 'Phoenix CRM Updater';
-    protected $description = 'Phoenix CRM Updater';
+    protected $readableName = 'Qan CRM Updater';
+    protected $description = 'Qan CRM Updater';
 
     public function fire()
     {

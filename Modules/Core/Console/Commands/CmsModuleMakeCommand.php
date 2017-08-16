@@ -7,7 +7,7 @@ use Symfony\Component\Finder\Finder;
 class CmsModuleMakeCommand extends BaseCommand
 {
     protected $name = 'cms:module:make';
-    protected $readableName = 'Phoenix CRM - Module Make';
+    protected $readableName = 'Qan CRM - Module Make';
     protected $description = 'Spawns a module with the details provided';
 
     protected $files;

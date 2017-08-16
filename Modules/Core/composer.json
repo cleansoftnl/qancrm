@@ -11,6 +11,8 @@
         "composer/installers": "dev-master",
 
         "laravelcollective/html": "~5.3",
+        "yajra/laravel-datatables-oracle": "~6.0",
+        "guzzlehttp/guzzle": "~6.0",
         "teepluss/theme": "~2.0",
         "anahkiasen/former": "~4.0",
         "mews/purifier": "~2.0",

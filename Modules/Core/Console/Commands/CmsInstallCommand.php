@@ -8,7 +8,7 @@ use File;
 class CmsInstallCommand extends BaseCommand
 {
     protected $name = 'cms:install';
-    protected $readableName = 'Phoenix CRM Installer';
+    protected $readableName = 'Qan CRM Installer';
     protected $description = 'Installs the CRM';
 
     public function fire()

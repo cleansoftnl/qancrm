@@ -15,8 +15,8 @@ return [
     ],
     // themes
     'themes' => [
-        'frontend' => 'coreui',
-        'backend' => 'admin_startbootstrap',
+        'frontend' => 'default_startbootstrap',
+        'backend' => 'default_admin',
     ],
     // site paths
     'paths' => [

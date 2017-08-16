@@ -1,6 +1,6 @@
 <?php
 use Dingo\Api\Routing\Router as ApiRouter;
 
-$router->version('v1', ['middleware' => ['api.auth'], 'namespace' => 'V1'], function (ApiRouter $router) {
+$router->version('v1', ['namespace' => 'V1', 'middleware' => ['api.auth']], function (ApiRouter $router) {
 
 });
