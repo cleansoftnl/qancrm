@@ -19,7 +19,10 @@ $router->group(['namespace' => 'Auth'], function ($router) {
             $router->post('/', ['uses' => 'AuthController@postPassExpired']);
             $router->get('/', ['as' => 'pxcms.user.pass_expired', 'uses' => 'AuthController@getPassExpired']);
         });
-        $router->post('/', ['uses' => 'AuthController@postLogin']);
+        /*
+         * Ultimate important login Controller
+         **/
+        $router->post('/', ['uses' => '\Modules\Core\Http\Controllers\Frontend\Auth\AuthController@postLogin']);
     });
     // Registration
     $router->get('register', ['as' => 'pxcms.user.register', 'uses' => 'AuthController@getRegister']);
