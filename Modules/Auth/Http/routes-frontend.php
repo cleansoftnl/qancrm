@@ -4,10 +4,10 @@ use Illuminate\Routing\Router;
 // Authentication
 $router->group(['namespace' => 'Auth'], function ($router) {
     // social has its own login route so dont define it here
-    if (!app('modules')->has('Social') || !app('modules')->get('Social')->enabled()) {
+    /*if (!app('modules')->has('Social') || !app('modules')->get('Social')->enabled()) {
         $router->get('login', ['as' => 'pxcms.user.login', 'uses' => 'AuthController@getLogin']);
-    }
-    $router->get('logout', ['as' => 'pxcms.user.logout', 'uses' => 'AuthController@getLogout', 'middleware' => 'auth:staff']);
+    }*/
+    /*$router->get('logout', ['as' => 'pxcms.user.logout', 'uses' => 'AuthController@getLogout', 'middleware' => 'auth:staff']);
     $router->group(['prefix' => 'login'], function (Router $router) {
         // 2fa
         $router->group(['prefix' => '2fa', 'middleware' => 'auth:staff'], function (Router $router) {
@@ -19,15 +19,11 @@ $router->group(['namespace' => 'Auth'], function ($router) {
             $router->post('/', ['uses' => 'AuthController@postPassExpired']);
             $router->get('/', ['as' => 'pxcms.user.pass_expired', 'uses' => 'AuthController@getPassExpired']);
         });
-        /*
-         * Ultimate important login Controller
-         **/
-        $router->post('/', ['uses' => '\Modules\Core\Http\Controllers\Frontend\Auth\AuthController@postLogin']);
-    });
+    });*/
     // Registration
-    $router->get('register', ['as' => 'pxcms.user.register', 'uses' => 'AuthController@getRegister']);
+    /*$router->get('register', ['as' => 'pxcms.user.register', 'uses' => 'AuthController@getRegister']);
     $router->post('register', 'AuthController@postRegister');
-    $router->get('registered', ['as' => 'pxcms.user.registered', 'uses' => 'AuthController@getRegistered']);
+    $router->get('registered', ['as' => 'pxcms.user.registered', 'uses' => 'AuthController@getRegistered']);*/
 
     /*$router->controller('password', 'PasswordController', [
         'getEmail' => 'pxcms.user.forgotpassword',

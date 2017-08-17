@@ -5,9 +5,7 @@
 
   <div class="panel panel-default">
     <div class="panel-heading">
-      <div class="panel-title">Please Sign In
-        <a href="{{ route('pxcms.user.register') }}" class="btn btn-default btn-sm pull-right">Register</a>
-      </div>
+      <div class="panel-title">Please Sign In</div>
     </div>
     <div class="panel-body">
       <h4>CoreUI Login</h4>

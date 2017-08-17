@@ -1,4 +1,4 @@
-{!! Former::horizontal_open()->action(route('pxcms.user.login')) !!}
+{!! Former::horizontal_open()->action(route('postlogin')) !!}
 
 {!! Former::text('email', 'Email')->required() !!}
 {!! Former::password('password', 'Password')->required() !!}
